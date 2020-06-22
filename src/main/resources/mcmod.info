@@ -1,0 +1,16 @@
+[
+{
+  "modid": "miaandme",
+  "name": "Mia and me",
+  "description": "By mia and me",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["kosmik8485"],
+  "credits": "For my kids with fun...",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
