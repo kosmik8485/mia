@@ -1,20 +1,23 @@
 package ru.msk.homesrv2.miaandme;
      
-import ru.msk.homesrv2.mia.proxy.CommonProxy;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInititalizationEvent;
+import ru.msk.homesrv2.miaandme.creativetabs.TabMain;
+import ru.msk.homesrv2.miaandme.proxy.CommonProxy;
 
-@Mod(modid = Mia.MODID, version = Mia.VERSION)
+@Mod(modid = MainClass.MODID, name = "Mia and me" version = MainClass.VERSION)
 public class Mia
 {
-    public static final String MODID = "mia";
+    public static final String MODID = "miaandme";
     public static final String VERSION = "0.0.1";
+    public static CreativeTabs tabMain = new TabMain("tabMain");
 
-    @SidedProxy( clientSide = "ru.msk.homesrv2.mia.proxy.ClientProxy", serverSide = "ru.msk.homesrv2.mia.proxy.CommonProxy" )
+    @SidedProxy( clientSide = "ru.msk.homesrv2.miaandme.proxy.ClientProxy", serverSide = "ru.msk.homesrv2.miaandme.proxy.CommonProxy" )
     public static CommonProxy proxy;
 
     @EventHandler
